@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button alphaValue="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="dbK-Ls-IMx">
+                    <rect key="frame" x="437" y="20" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="F9C-5y-bFn"/>
+                        <constraint firstAttribute="height" constant="24" id="mRt-Dt-Yqn"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Download" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="lBm-8f-tL4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="59n-ya-6cI">
+                    <rect key="frame" x="15" y="16" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Zgs-g8-jdT"/>
+                        <constraint firstAttribute="height" constant="32" id="lpR-pI-wmh"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ZIP" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Mex-sT-vDi">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuh-tA-DoO">
+                    <rect key="frame" x="358" y="24" width="71" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="12.5 MB" id="bYV-J1-zW1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.31085421954314718" green="0.31085421954314718" blue="0.31085421954314718" alpha="0.80446275684931501" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button alphaValue="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Y36-BI-DMn">
+                    <rect key="frame" x="470" y="22" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="U7Y-Uh-YVc"/>
+                        <constraint firstAttribute="height" constant="20" id="qnK-Xe-5JZ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Info" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YPJ-1Y-1e6">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kml-ga-93v">
+                    <rect key="frame" x="56" y="24" width="215" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Economics HL 2013-2016 Pack.zip" id="Zoi-XG-iyF">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Y36-BI-DMn" firstAttribute="leading" secondItem="dbK-Ls-IMx" secondAttribute="trailing" constant="9" id="03f-bv-B8g"/>
+                <constraint firstItem="Kml-ga-93v" firstAttribute="leading" secondItem="59n-ya-6cI" secondAttribute="trailing" constant="11" id="8mS-Qt-eGc"/>
+                <constraint firstItem="59n-ya-6cI" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="ANm-kw-lCg"/>
+                <constraint firstItem="dbK-Ls-IMx" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Ce5-5h-xUF"/>
+                <constraint firstItem="Kml-ga-93v" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Etb-f0-kLG"/>
+                <constraint firstItem="Y36-BI-DMn" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="T6N-eC-Cw4"/>
+                <constraint firstItem="59n-ya-6cI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="15" id="bmq-Ra-hbq"/>
+                <constraint firstAttribute="trailing" secondItem="Y36-BI-DMn" secondAttribute="trailing" constant="14" id="cUV-yg-6Pe"/>
+            </constraints>
+            <point key="canvasLocation" x="151" y="65"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Download" width="100" height="100"/>
+        <image name="Info" width="100" height="100"/>
+        <image name="ZIP" width="96" height="96"/>
+    </resources>
+</document>
